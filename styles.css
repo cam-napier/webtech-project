@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -34,6 +34,8 @@ body {
 }
 
 .header h1 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
     font-size: 2rem;
     margin: 0;
 }
@@ -133,17 +135,20 @@ body {
 }
 
 .joke-card .setup {
+    font-family: 'Balsamiq Sans', sans-serif;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .joke-card .delivery {
+    font-family: 'Balsamiq Sans', sans-serif;
     font-size: 1rem;
     color: var(--secondary-color);
 }
 
 .joke-card .joke {
+    font-family: 'Balsamiq Sans', sans-serif;
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -161,6 +166,8 @@ body {
 
 /* Footer */
 .footer {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 400;
     background-color: var(--primary-color);
     color: white;
     text-align: center;

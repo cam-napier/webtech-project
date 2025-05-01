@@ -1,0 +1,226 @@
+{
+    "category": "Programming",
+    "jokes": [
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Whats the Grinchs least favorite band?",
+            "delivery": "The Who.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "safe": true,
+            "id": 292,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "What's Santa's favourite type of music?",
+            "delivery": "Wrap!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 246,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Why couldn't the skeleton go to the Christmas party?",
+            "delivery": "Because he had no body to go with!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 251,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "What do elves post on Social Media?",
+            "delivery": "Elf-ies!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 248,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "What says Oh Oh Oh?",
+            "delivery": "Santa walking backwards!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 244,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Why does Santa go down the chimney?",
+            "delivery": "Because it soots him!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 252,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Who hides in the bakery at Christmas?",
+            "delivery": "A mince spy!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 249,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "What does Santa suffer from if he gets stuck in a chimney?",
+            "delivery": "Claustrophobia!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 240,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "What do Santa's little helpers learn at school?",
+            "delivery": "The elf-abet!\n",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 247,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Why did Santa's helper see the doctor?",
+            "delivery": "Because he had a low \"elf\" esteem!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 242,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Why does Santa have three gardens?",
+            "delivery": "So he can 'ho ho ho'!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 241,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "What kind of motorbike does Santa ride?",
+            "delivery": "A Holly Davidson!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 243,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Christmas",
+            "type": "twopart",
+            "setup": "Who is Santa's favourite singer?",
+            "delivery": "Elf-is Presley!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 245,
+            "safe": true,
+            "lang": "en"
+        }
+    ]
+}

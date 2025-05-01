@@ -2,6 +2,8 @@
 let jokes = [];
 // Using a Set to store unique categories
 let categories = new Set();
+let currentCategory = null;
+
 
 // DOM Elements
 const categoryList = document.getElementById('category-list');
@@ -22,6 +24,9 @@ function init() {
 
         // Display random jokes
         displayRandomJokes(10);
+
+        // Add event listeners
+        setupEventListeners();
 }
 
 // Populate categories in the sidebar
@@ -61,6 +66,22 @@ function displayJokes(jokesToDisplay) {
             }
         </div>
     `).join('');
+}
+
+// Set up event listeners
+function setupEventListeners() {
+    // Category click handler
+    categoryList.addEventListener('click', (e) => {
+        e.preventDefault();
+        const categoryLink = e.target.closest('a');
+        if (!categoryLink) return;
+
+        const category = categoryLink.dataset.category;
+                
+        // Display jokes for selected category
+        currentCategory = category;
+        displayRandomJokes(10, category);
+    });
 }
 
 

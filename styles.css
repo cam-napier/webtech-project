@@ -76,6 +76,27 @@ body {
     font-size: 1.2rem;
 }
 
+#category-list {
+    list-style: none;
+}
+
+#category-list li {
+    margin-bottom: 0.5rem;
+}
+
+#category-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 4px;
+}
+
+#category-list a:hover,
+#category-list a.active {
+    background-color: var(--hover-color);
+    color: white;
+}
 
 /* Main Content */
 .main-content {

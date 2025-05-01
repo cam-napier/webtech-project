@@ -8,6 +8,7 @@ let currentCategory = null;
 // DOM Elements
 const categoryList = document.getElementById('category-list');
 const jokesContainer = document.getElementById('jokes-container');
+const currentYear = document.getElementById('current-year');
 
 // Initialize the application
 function init() {
@@ -18,6 +19,10 @@ function init() {
         jokes.forEach(joke => {
             categories.add(joke.category);
         });
+
+        // Set current year in footer
+        currentYear.textContent = new Date().getFullYear();
+
 
         // Populate categories
         populateCategories();

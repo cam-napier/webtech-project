@@ -87,6 +87,21 @@ function setupEventListeners() {
         currentCategory = category;
         displayRandomJokes(10, category);
     });
+
+    // Joke card click handler
+    jokesContainer.addEventListener('click', (e) => {
+        const jokeCard = e.target.closest('.joke-card');
+        if (!jokeCard) return;
+
+        const jokeId = parseInt(jokeCard.dataset.id);
+        const joke = jokes.find(j => j.id === jokeId);
+        
+        if (joke) {
+            // Store joke in sessionStorage for single joke view
+            sessionStorage.setItem('currentJoke', JSON.stringify(joke));
+            window.location.href = 'single-joke.html';
+        }
+    });
 }
 
 

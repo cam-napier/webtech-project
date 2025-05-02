@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Joke's On You: Add a Joke</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
+</head>
+<body>
+    <header class="header">
+        <h1>The Joke's On You</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-joke.html" aria-current="page">Add a Joke</a></li>
+                <li><a href="favourites.html">Favourites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content add-joke" aria-label="Add a new joke">
+        <h2>Add a New Joke</h2>
+        <form id="joke-form" class="joke-form">
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <!-- Categories will be populated by JavaScript -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Joke Type:</label>
+                <select id="type" name="type" required>
+                    <option value="">Select a type</option>
+                    <option value="single">Single Part</option>
+                    <option value="twopart">Two Part</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="single-joke-group">
+                <label for="joke">Joke:</label>
+                <textarea id="joke" name="joke" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group" id="twopart-joke-group">
+                <label for="setup">Setup:</label>
+                <textarea id="setup" name="setup" rows="2" required></textarea>
+                <label for="delivery">Delivery:</label>
+                <textarea id="delivery" name="delivery" rows="2" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="button">Add Joke</button>
+                <button type="button" class="button button-secondary" id="cancel-button">Cancel</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Joke Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="add-joke.js"></script>
+</body>
+</html> 

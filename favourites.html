@@ -27,14 +27,27 @@
     </header>
 
     <main class="main-content favourites" aria-label="Favourite jokes">
-        <h2>Your Favourite Jokes</h2>
-        <div id="favourites-container">
-            <!-- Favourite jokes will be populated by JavaScript -->
-        </div>
-        <div id="no-favourites" class="no-favourites" style="display: none;">
-            <p>You haven't added any jokes to your favourites yet.</p>
-            <a href="index.html" class="button">Browse Jokes</a>
-        </div>
+        <section class="favourites-section">
+            <h2>Your Favourite Jokes</h2>
+            <div id="favourites-container">
+                <!-- Favourite jokes will be populated by JavaScript -->
+            </div>
+            <div id="no-favourites" class="no-favourites" style="display: none;">
+                <p>You haven't added any jokes to your favourites yet.</p>
+                <a href="index.html" class="button">Browse Jokes</a>
+            </div>
+        </section>
+
+        <section class="user-jokes-section">
+            <h2>Your Added Jokes</h2>
+            <div id="user-jokes-container">
+                <!-- User-added jokes will be populated by JavaScript -->
+            </div>
+            <div id="no-user-jokes" class="no-favourites" style="display: none;">
+                <p>You haven't added any jokes yet.</p>
+                <a href="add-joke.html" class="button">Add a Joke</a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

@@ -1,6 +1,7 @@
 # webtech-project
 Web Technologies SET08101/401/801
 
+## Deployed site
 The GitHub Pages deployed version of the site can be found here:
 https://cam-napier.github.io/webtech-project/
 

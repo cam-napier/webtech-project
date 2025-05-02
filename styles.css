@@ -36,6 +36,7 @@ body {
 }
 
 .header h1 {
+    font-family: 'Balsamiq Sans', sans-serif;
     font-size: 2rem;
     margin: 0;
 }
@@ -90,6 +91,7 @@ body {
 }
 
 #category-list a {
+    font-family: 'Balsamiq Sans', sans-serif;
     color: var(--text-color);
     text-decoration: none;
     padding: 0.5rem;
@@ -138,6 +140,7 @@ body {
 }
 
 .joke-category {
+    font-family: 'Balsamiq Sans', sans-serif;
     display: inline-block;
     background-color: var(--secondary-color);
     color: white;
@@ -165,6 +168,7 @@ body {
 
 /* Footer */
 .footer {
+    font-family: 'Balsamiq Sans', sans-serif;
     background-color: var(--primary-color);
     color: white;
     text-align: center;

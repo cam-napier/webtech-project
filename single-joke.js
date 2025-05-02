@@ -126,12 +126,24 @@ function setupEventListeners() {
             // Add to favorites
             favorites.push(joke);
             favoriteButton.textContent = 'Remove from Favorites';
-            playAddToFavoritesSound(); // Play sound when adding to favorites
+            favoriteButton.classList.add('favorite-animation');
+            playAddToFavoritesSound();
+            
+            // Remove animation class after animation completes
+            setTimeout(() => {
+                favoriteButton.classList.remove('favorite-animation');
+            }, 300);
         } else {
             // Remove from favorites
             favorites.splice(index, 1);
             favoriteButton.textContent = 'Add to Favorites';
-            playRemoveFromFavoritesSound(); // Play sound when removing from favorites
+            favoriteButton.classList.add('remove-animation');
+            playRemoveFromFavoritesSound();
+            
+            // Remove animation class after animation completes
+            setTimeout(() => {
+                favoriteButton.classList.remove('remove-animation');
+            }, 300);
         }
         
         localStorage.setItem('favorites', JSON.stringify(favorites));

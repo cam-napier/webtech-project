@@ -12,6 +12,8 @@ const currentYear = document.getElementById('current-year');
 
 // Initialize the application
 function init() {
+    try {
+
         // Use jokes data directly
         jokes = jokesData;
         
@@ -32,6 +34,10 @@ function init() {
 
         // Add event listeners
         setupEventListeners();
+    } catch (error) {
+        console.error('Error initializing application:', error);
+        jokesContainer.innerHTML = '<p class="error">Error loading jokes. Please try again later.</p>';
+    }
 }
 
 // Populate categories in the sidebar
@@ -83,6 +89,12 @@ function setupEventListeners() {
 
         const category = categoryLink.dataset.category;
                 
+        // Update active category
+        document.querySelectorAll('#category-list a').forEach(link => {
+            link.classList.remove('active');
+        });
+        categoryLink.classList.add('active');
+        
         // Display jokes for selected category
         currentCategory = category;
         displayRandomJokes(10, category);

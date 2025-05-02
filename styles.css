@@ -3,10 +3,11 @@
     --secondary-color: #3498db;
     --background-color: #f8f9fa;
     --text-color: #333;
+    --border-color: #ddd;
     --hover-color: #2980b9;
+    --active-category-color: #e74c3c;
 }
 
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -34,8 +36,6 @@ body {
 }
 
 .header h1 {
-    font-family: 'Balsamiq Sans', sans-serif;
-    font-weight: 700;
     font-size: 2rem;
     margin: 0;
 }
@@ -72,6 +72,8 @@ body {
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-width: 200px;
 }
 
 .categories h2 {
@@ -93,6 +95,7 @@ body {
     padding: 0.5rem;
     display: block;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 #category-list a:hover,
@@ -134,25 +137,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.joke-card .setup {
-    font-family: 'Balsamiq Sans', sans-serif;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.joke-card .delivery {
-    font-family: 'Balsamiq Sans', sans-serif;
-    font-size: 1rem;
-    color: var(--secondary-color);
-}
-
-.joke-card .joke {
-    font-family: 'Balsamiq Sans', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
 .joke-category {
     display: inline-block;
     background-color: var(--secondary-color);
@@ -163,11 +147,24 @@ body {
     margin-bottom: 0.75rem;
 }
 
+.joke-card .setup {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.joke-card .delivery {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.joke-card .joke {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
 /* Footer */
 .footer {
-    font-family: 'Balsamiq Sans', sans-serif;
-    font-weight: 400;
     background-color: var(--primary-color);
     color: white;
     text-align: center;
@@ -175,3 +172,204 @@ body {
     margin-top: auto;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .categories {
+        min-width: 100%;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Accessibility */
+:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header, .categories, .footer {
+        display: none;
+    }
+
+    .main-content {
+        box-shadow: none;
+    }
+}
+
+/* Single Joke View */
+.single-joke {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.joke-details {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.joke-details .setup {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.joke-details .delivery {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.joke-details .joke {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.joke-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Button Styles */
+.button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.button:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Error Message */
+.error {
+    color: var(--active-category-color);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Add Joke Form */
+.add-joke {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.joke-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+/* Secondary Button */
+.button-secondary {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.button-secondary:hover {
+    background-color: var(--border-color);
+}
+
+/* Favourites Page */
+.favourites {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#favourites-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#favourites-container .joke-card {
+    margin-bottom: 1rem;
+}
+
+.no-favourites {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.no-favourites p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Remove Favorite Button */
+.remove-favorite {
+    margin-top: 1rem;
+    width: 100%;
+} 
